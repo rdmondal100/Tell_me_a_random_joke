@@ -1,0 +1,184 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  #jokes {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      border: 2px;
+      font-size: 2rem;
+      color: #0a0300;
+      text-shadow:  4px 5px 5px black;
+      background-color: #b39898;
+      box-shadow: inset 2px 2px 5px gray, 2px 2px 25px gray, 2px 2px 50px gray, 2px 2px 200px 6px gray;
+      border-radius: 8px;
+    
+       height: 100px;
+      width: 500px;
+    
+      
+  }
+  .toast{
+    justify-content:center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    position:fixed;
+    
+  }
+
+  .new-joke{
+  
+     justify-content:center;
+    align-items: center;
+    display: flex;
+    margin-top: 40px;
+    border-radius: 14px;
+    
+  }
+  
+  
+  
+  /* button effect */
+  
+          *{
+              margin: 0PX;
+              padding: 0px;
+              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+              box-sizing: border-box;
+  
+          }
+          body{
+  
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              min-height: 100vh;
+              flex-direction: column;
+              background-color: black;
+          }
+          button{
+            border-radius:5px;
+            text-shadow: 3px 3px 3px #131111;
+              position: relative;
+              display: inline-block;
+              padding: 25px 30px;
+              margin: 40px;
+              color: #fafafa;
+            background-color:#899089;
+              font-size: larger;
+              text-decoration: none;
+              text-transform: uppercase;
+              transition: .5s;
+              letter-spacing: 3px;
+              height: 25px ;
+              width: 207px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              overflow: hidden;
+              -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+  
+  
+  
+          }
+          button:nth-child(1){
+              filter: hue-rotate(290deg);
+          }
+          button:nth-child(3){
+              filter: hue-rotate(110deg);
+          }
+          button:hover{
+              background-color: #03e9f4;
+              color: black;
+             box-shadow: inset 2px 2px 5px  #03e9f4,  2px 2px 25px  #03e9f4,  2px 2px 50px  #03e9f4,  2px 2px 200px 6px #03e9f4 ;
+             border-radius: 7px;
+          }
+          button span{
+              position: absolute;
+              display: block;
+  
+          }
+          button span:nth-child(1){
+  
+              top: 0px;
+              left: 0px;
+              width: 100%;
+              height: 2px;
+              background: linear-gradient(90deg,transparent,red);
+              animation: rd1 1s linear infinite;
+  
+          }
+          @keyframes rd1{
+              0%{
+                  left: -100%;
+              }
+              50%,100%{
+                  left: 100%;
+              }
+          }
+          button span:nth-child(2){
+  
+              top: -100px;
+              right: 0px;
+              width: 2px;
+              height: 100%;
+              background: linear-gradient(180deg,transparent,red);
+              animation: rd2 1s linear infinite;
+              animation-delay:.25s;
+  
+          }
+          @keyframes rd2{
+              0%{
+                  top: -100%;
+              }
+              50%,100%{
+                  top: 100%;
+              }
+          }
+          button span:nth-child(3){
+  
+              bottom: 0px;
+              right: -100%;
+              width: 100%;
+              height: 2px;
+              background: linear-gradient(270deg,transparent,red);
+              animation: rd3 1s linear infinite;
+              animation-delay:.5s;
+  
+          }
+          @keyframes rd3{
+              0%{
+                  right: -100%;
+              }
+              50%,100%{
+                  right: 100%;
+              }
+          }
+          button span:nth-child(4){
+  
+              bottom: -100%;
+              left: 0px;
+              height: 100%;
+              width: 2px;
+              background: linear-gradient(360deg,transparent,red);
+              animation: rd4 1s linear infinite;
+              animation-delay:.75s;
+  
+          }
+          @keyframes rd4{
+              0%{
+                  bottom: -100%;
+              }
+              50%,100%{
+                  bottom: 100%;
+              }
+          }
+  
+  
+          
+  
+  
+    
